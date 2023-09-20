@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+  position: relative;  
+  width: 200px;
+  height: 200px;
+  margin: 1rem;
+  background: red
+}
+
+body :nth-child(1) {
+    background:blue ;
+}
+
+div:nth-of-type(2) {
+    background: green;
+    left: 150px;
+    bottom: -150px
+}
+
+div:nth-of-type(3)    {
+background: purple;
+
+
+}
+
+div:hover {
+  background: yellow;
+}
