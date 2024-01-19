@@ -27,3 +27,13 @@ const lis = items.map(item => `<li>${item}</li>`)
 ul.innerHTML = lis.join('')
 
 // Handle a mouse click on the h1 element
+// document.querySelector('h1').addEventListener('click', event => event.target.innerText += '!')
+
+const newItem = document.querySelector('#newItem')
+const btn = document.querySelector('button')
+
+btn.addEventListener('click', () => {
+    ul.innerHTML += `<li>${newItem.value}</li>`
+    newItem.value = ''
+})
+
